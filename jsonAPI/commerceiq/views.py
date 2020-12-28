@@ -33,7 +33,7 @@ class Posts_API(APIView):
         if q is not None :
             posts = posts.filter(title=q)
         if sort is not None :
-            if order is "dsc" :
+            if order == "asc" :
                 posts = posts.order_by(f'{sort}')
             else :
                 posts = posts.order_by(f'-{sort}')
@@ -84,7 +84,7 @@ class Authors_API(APIView):
         if q is not None :
             authors = authors.filter(first_name=first_name)
         if sort is not None :
-            if order is "dsc" :
+            if order == "asc" :
                 authors = authors.order_by(f'{sort}')
             else :
                 authors = authors.order_by(f'-{sort}')
