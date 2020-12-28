@@ -24,22 +24,31 @@ POST = Creates the object with the next available id
 ## /posts/{Integer} =>
 
 GET = Returns a json with id {Integer} 
+
 PUT = Updates the object with id {Integer}
+
   headers = {
               'Content-Type' : 'application/json'
             }
+	    
   body = {
             'title' : 'title1',
             'author' : 'CIQ',
-         }
+         }  
          Note : Both title and author are necessary
+	 
 PATCH = Updates the object with id {Integer}
+
   headers = {
               'Content-Type' : 'application/json'
             }
+	    
   body = {
             'title' : 'title1',
          }
+
+DELETE = Deletes the object with id {Integer}
+	 
 
          
          
