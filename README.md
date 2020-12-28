@@ -3,6 +3,8 @@
 
 The hosted endpoints can be found at BASE_URL = 'http://abhishek3ic.pythonanywhere.com/authors'
 
+The databse can be extracted in json format by running python manage.py dumpdata > store.json in the Virtual MAchine where the server is hosted , the endpoint to download the json file has not been made as it is not a good practice to expose the entire databse.
+
 ## /posts =>
 
 GET = Returns a json file with all the posts in ascending order of their id . This request enables entitly level filtering,sorting and search.
